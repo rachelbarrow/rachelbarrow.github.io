@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #234;
+  overflow-x: hidden;
+  background: #ddd;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+/* h1-h6 are purely semantic */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  display: inherit;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* font awesome */
+.fa-linkedin-square:hover {
+  color: #2867B2;
+}
+.fa-github:hover, .fa-github-square:hover, .fa-github-alt:hover {
+  color: #333;
+}
+.fa-hackerrank:hover {
+  color: #31C867;
+}
+.fa-envelope-square:hover {
+  color: #48A;
+}
+.fa, .fab {
+  font-weight: normal !important;
+}
+
+/* start header */
+header  {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: #666 solid 1px;
+  background-color: white;
+}
+  header .navList, .navTitle { /* vertically centers nav content */
+    height: 60px;
+    line-height: 60px;
+  }
+
+.navTitle {
+  float: left;
+	font-size: 20px;
+  letter-spacing: 1.5px;
+  font-variant: small-caps;
+  width: 50%;
+}
+  .navTitle i {
+    padding-left: 30px;
+  }
+  .navTitle a {
+    padding-left: 10px;
+  }
+
+.navList {
+  float: right;
+  text-transform: uppercase;
+  width: 50%;
+	font-size: 12px;
+  font-weight: bold;
+  color: #666;
+}
+  .navList li {
+    float: left;
+    list-style-type: none;
+    padding: 0px 30px;
+  }
+
+.externalLinks {
+  float: right;
+  font-size: 20px;
+  padding: 0px;
+}
+  .externalLinks i {
+    width: 30px;
+    transition: 0.3s;
+  }
+
+.tabsMenu {
+  float: left;
+}
+  .tabsMenu a:hover, a.active {
+    color: #124;
+  }
+
+/* end header */
+
+.wrapper { /* for sticky footer  */
+  min-height: 100%;
+}
+
+main {
+
+}
+
+
+/* start footer */
+footer {
+  font-size: 16px;
+  color: #aaa;
+  background: white;
+  padding: 0px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: #aaa solid 1px;
+  height: 30px;
+  margin-top: -41px;
+  font-family: Georgia, serif;
+}
+  footer > * {
+    line-height: 30px;
+    height: 30px;
+  }
+  footer h6 {
+    float: left;
+  }
+  footer .navList {
+    float: right;
+    width: auto;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: capitalize;
+    margin-right: 5px;
+  }
+    footer .navList a {
+      margin-left: 5px;
+    }
+
