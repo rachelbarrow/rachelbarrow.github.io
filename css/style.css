@@ -231,8 +231,8 @@ footer {
 
 /* start project page */
 .project {
-  border-radius: 15px;
-  width: 50%;
+  border-radius: 5px;
+  width: 40%;
   margin: auto;
   overflow: hidden;
   margin-bottom: 20px;
@@ -244,16 +244,16 @@ footer {
   text-align: justify;
   transition: 0.3s;
 }
-  .project > * {
-    display: inline-block;
-  }
-  .project > img {
+  .project img {
+    display: none;
+    border-radius: 50%;
     float: left;
-    width: 20%;
+    width: 15%;
+    padding-top: 0;
   }
-  .project > div {
+  .project div {
     float: right;
-    width: 80%;
+    /* width: 80%; */
   }
     .project > div h2 {
       font-size: 20px;
@@ -281,11 +281,12 @@ footer {
       margin-bottom: 5px;
       margin-right: 15px;
     }
+    /*
     .project:hover {
       box-shadow: 0px 1px 5px 0px #567;
       background-color: white;
       transition: 0.3s;
-    }
+    }*/
 /* end project page */
 
 /* start demos page */
@@ -327,31 +328,61 @@ h1[slot="header"] {
 /* end demos page */
 
 /* start experience page */
-.eAndS {
-  width: 60%;
-  margin: auto;
-  overflow-y: hidden;
+.exp {
+  width: 40%;
+  margin: 20px auto;
 }
-  .eAndS section {
-    margin-bottom: 20px;
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0px 1px 5px 0px #567;
+  .exp * {
+    line-height: 1.55;
   }
-  .eAndS h2 {
-    font-size: 20px;
-    font-weight: 600;
+  .exp section {
+    padding: 10px;
+  }
+  .exp nav {
+    margin-top: 5px;
+  }
+  .exp li {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  .education li {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #456;
+  }
+  .exp h2 {
+    font-size: 22px;
+    font-weight: bold;
     margin-bottom: 5px;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 1px 5px 0px #567;
+    border-radius: 5px;
+    background-image: url(/media/background1.png);
+  }
+  .exp h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .exp h4 {
+    font-size: 17px;
+  }
+  .exp h5 {
+    font-size: 16px;
+    color: #456;
+  }
+  .exp p {
+    color: #456;
+    font-size: 16px;
   }
 
   .experience {
-    width: 48%;
-    float: left;
+
   }
 
   .skills {
-    width: 48%;
-    float: right;
+
   }
 
 
